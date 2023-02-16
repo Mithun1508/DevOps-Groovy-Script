@@ -1,3 +1,6 @@
+
+![main](https://user-images.githubusercontent.com/93249038/219248373-4db39f88-5d7a-4b2f-968d-c38f46919c79.jpg)
+
 So, What is Jenkins Job-DSL?
 Jenkins is a wonderful system for managing builds, and people love using its UI to configure jobs. Job DSL was one of the first popular plugins for Jenkins which allows managing configuration as code.The Jenkins Job DSL enables the programmatic creation of Jenkins jobs using Groovy code. You can store this code in your Git repository and thus make changes traceable and generate Jenkins jobs automatically. The DSL is provided via the Job DSL Plugin and is documented in detail in the Job DSL API Viewer.
 
@@ -69,6 +72,10 @@ Finally, our setup is ready for work. Let’s quickly do the things.
 
 Step 1:
 Create a Jenkins Seed job which create our other Jenkins job and also create a pipeline.
+![step11](https://user-images.githubusercontent.com/93249038/219248421-99703df5-fc8b-406f-96e7-c99c47005fed.jpg)
+
+
+![step1](https://user-images.githubusercontent.com/93249038/219248464-a8ae50d7-a6b2-49ee-a630-a7ff9d5cd4c1.jpg)
 
 
 Seed job
@@ -218,11 +225,14 @@ Bang on!!! Your work is nearly completed.
 Step 4:
 You can see a very powerful and fault tolerance setup is ready in Kubernetes. If anything is goes down within a second new one is created with all configuration and same old data available.
 
+![step4](https://user-images.githubusercontent.com/93249038/219248509-8709e53f-17b9-4e21-8bb3-cf35739cbee7.jpg)
 
 Kubernetes info
+
 Step 5:
 I integrate both steps 5 and 6 in there as because for monitoring we need metrics and I also use here Grafana so we can visualize properly and also behind the scene Grafana get the metrics from Prometheus. For showing you this visualization I use a simple query process_cpu_seconds_total. This showing us the CPU utilization of servers.
 
+![step5](https://user-images.githubusercontent.com/93249038/219248531-8721077b-1c19-420e-9a06-d5b704ebf5f6.jpg)
 
 Visualize
 Now, At the end I would like to show you the web page of our web server. This is just a testing page which I made for testing.
